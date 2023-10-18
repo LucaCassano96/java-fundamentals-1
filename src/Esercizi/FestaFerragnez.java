@@ -31,9 +31,11 @@ public class FestaFerragnez {
 
                 permesso = true;
             }
+
+            break;
         }
 
-        if (permesso == true) {
+        if (permesso) {
 
             System.out.println("puoi entrare");
         } else {
@@ -41,5 +43,6 @@ public class FestaFerragnez {
             System.out.println("Non puoi entrare");
         }
 
+        scan.close();
     }
 }
