@@ -35,7 +35,6 @@ public class Treno {
         else {
             System.out.println("il prezzo del tuo biglietto è: " + costoViaggio);
         }
-
         scan.close();
     }
 }
