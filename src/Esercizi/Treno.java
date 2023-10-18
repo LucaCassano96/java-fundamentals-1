@@ -24,13 +24,16 @@ public class Treno {
 
         if (age <= 18) {
 
-            double sconto = costoViaggio * 100 / 20;
-            System.out.println("il prezzo del tuo biglietto è: " + sconto);
+            double sconto = costoViaggio * 20 / 100;
+
+            double costoViaggioConSconto =  costoViaggio - sconto;
+            System.out.println("il prezzo del tuo biglietto è: " + costoViaggioConSconto);
 
         } else if (age >= 65) {
 
-            double sconto = costoViaggio * 100 / 40;
-            System.out.println("il prezzo del tuo biglietto è: " + sconto);
+            double sconto = costoViaggio * 40 / 100;
+            double costoViaggioConSconto =  costoViaggio - sconto;
+            System.out.println("il prezzo del tuo biglietto è: " + costoViaggioConSconto);
         }
         else {
             System.out.println("il prezzo del tuo biglietto è: " + costoViaggio);
